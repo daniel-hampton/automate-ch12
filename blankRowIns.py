@@ -20,7 +20,7 @@ if len(sys.argv) > 1:
         print('An error occured with filename: {}'.format(err))
         raise
 
-# TODO: create workbook
+# create workbook
 wb = openpyxl.load_workbook(filename)
 sheet = wb.active
 

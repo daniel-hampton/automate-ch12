@@ -29,7 +29,7 @@ for row in range(2, sheet.max_row + 1):
     # Increase the county pop in this census tract.
     county_data[state][county]['pop'] += int(pop)
 
-# TODO: open a new text file and write the contents of county_data to it.
+# open a new text file and write the contents of county_data to it.
 print('Writing results...')
 result_file = open('census2010.py', 'w')
 result_file.write('allData = ' + pprint.pformat(county_data))
